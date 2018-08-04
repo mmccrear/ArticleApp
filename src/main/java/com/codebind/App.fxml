@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="507.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codebind.App">
+   <children>
+      <HTMLEditor id="finalArticle" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="243.0" layoutY="123.0" prefHeight="384.0" prefWidth="631.0" />
+      <ScrollPane layoutY="125.0" prefHeight="384.0" prefWidth="238.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextArea id="initArticle" layoutX="7.0" prefHeight="384.0" prefWidth="225.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button id="btnCopy" layoutX="517.0" layoutY="97.0" mnemonicParsing="false" text="Copy pls" />
+      <Button id="btnProcess" layoutX="315.0" layoutY="97.0" mnemonicParsing="false" onAction="#processArticleButtonAction" text="Process Article" />
+      <CheckBox id="cVideo" layoutX="182.0" layoutY="102.0" mnemonicParsing="false" text="Include Video" />
+      <ComboBox id="cbKickers" layoutX="14.0" layoutY="97.0" prefWidth="150.0" promptText="PICKA KICKA" />
+   </children>
+</AnchorPane>

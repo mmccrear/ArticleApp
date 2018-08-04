@@ -1,0 +1,105 @@
+.panel, .check-box .box, .combo-box-popup .list-view {
+	-fx-background-color: rgb(255, 255, 255);
+	-fx-effect: dropshadow(gaussian, #ccc, 10, 0, 0, 4);
+	-fx-background-radius: 0;
+}
+
+#title {
+	-fx-effect: dropshadow(gaussian, #ccc, 10, 0, 0, 4);
+	-fx-background-radius: 0;
+}
+
+.check-box .box {
+	-fx-pref-height: 32px;
+}
+
+
+.combo-box-popup {
+	-fx-border-size: 0;
+}
+
+.combo-box .list-view .cell:selected {
+    -fx-background-color: red;
+}
+
+.popup-button {
+    -fx-background-color: blue;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: red;
+}
+
+.text-area {
+	-fx-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 0;
+}
+
+.thumb {
+	-fx-background-radius: 0;
+	-fx-background-color: #ccc;
+	-fx-height: 20%;
+}
+
+.thumb:hover {
+	-fx-background-color: #b1b1b1;
+}
+
+#kicker {
+	-fx-font-size: 18px;
+}
+
+.font-menu-button, .popup-button {
+	-fx-background-color: rgb(255, 255, 255);
+	-fx-background-radius: 0;
+}
+
+.decrement-button, .increment-button {
+	-fx-background-color: #f1f1f1;
+	-fx-background-radius: 0;
+}
+
+.track {
+	-fx-background-color: #f1f1f1;
+	-fx-background-radius: 0;
+}
+
+.panel p {
+	-fx-color: #000;
+	-fx-font-size: 16px;
+	-fx-line-height: 28px;
+	-fx-text-align: left;
+}
+
+.arrow-button {
+	-fx-background-color: rgb(255, 255, 255);
+}
+
+#processButton {
+	-fx-background-color: #23b5ba;
+}
+
+#copyButton {
+	-fx-background-color: #1b1b1f;
+}
+
+.bottom-toolbar:horizontal, .top-toolbar:horizontal {
+	-fx-background-color: #f1f1f1;
+	-fx-border-color: #ddd;
+}
+
+.bottom-toolbar:horizontal {
+	-fx-border-width: 0 1px 1px 1px;
+}
+
+.top-toolbar:horizontal {
+	-fx-border-width: 1px 1px 0 1px;
+}
+
+.html-editor {
+	-fx-border-width: 0;
+}
+
+#AnchorPane, #Content {	
+	-fx-border-width: 0 0 0 0;
+}

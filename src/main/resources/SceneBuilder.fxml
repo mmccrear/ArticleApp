@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet SceneBuilder .css?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.HTMLEditor?>
+<AnchorPane fx:controller="com.codebind.MyController" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f1f1" height="2000.0" layoutX="0.0" layoutY="0.0" scaleZ="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="3000.0" />
+    <Button fx:id="btnProcess" onAction="#processArticleButtonAction" id="processButton" layoutX="370.0" layoutY="80.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="background: white!important&#10;&#10;" styleClass="panel" text="Process" textFill="WHITE">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <ComboBox fx:id="cbKickers" id="kicker" editable="false" layoutX="20.0" layoutY="82.0" prefHeight="32.0" prefWidth="200.0" promptText="Category" styleClass="panel" visibleRowCount="6"/>
+    <CheckBox fx:id="cVideo" font="$x1" layoutX="240.0" layoutY="80.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="130.0" text="Add video" />
+    <Rectangle id="title" arcHeight="5.0" arcWidth="5.0" fill="#1b1b1f" height="60.0" layoutX="0.0" layoutY="0.0" stroke="#23b5ba" strokeType="OUTSIDE" strokeWidth="1.0" style="&#10;}" width="3000.0" />
+    <Button fx:id="btnCopy" onAction="#copyArticleButtonAction" font="$x1" layoutX="490.0" layoutY="80.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="background: white!important&#10;&#10;" styleClass="panel" text="Copy" textFill="BLACK" />
+    <ImageView fitHeight="39.50601577758789" fitWidth="159.08036880729776" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="/logo.png" />
+      </image>
+    </ImageView>
+    <HTMLEditor fx:id="finalArticle" layoutX="490.0" layoutY="132.0" prefHeight="548.0" prefWidth="590.0" styleClass="panel" />
+    <TextArea fx:id="initArticle" layoutX="20.0" layoutY="132.0" prefHeight="548.0" prefWidth="450.0" styleClass="panel" wrapText="true" />
+    <Text layoutX="159.0" layoutY="40.0" scaleX="0.7966975541781699" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autocorrects">
+      <fill>
+        <Color blue="0.729" green="0.710" red="0.137" fx:id="x2" />
+      </fill>
+      <font>
+        <Font name="☞StMariePro-DemiBold" size="30.0" />
+      </font>
+    </Text>
+  </children>
+  <padding>
+    <Insets />
+  </padding>
+</AnchorPane>
